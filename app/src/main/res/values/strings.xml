@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TV Maze example pressent</string>
+    <string name="titleName">Name</string>
+    <string name="titleGenres">Genres</string>
+    <string name="titleStars">rating</string>
+    <string name="titleSummery">Summery</string>
+    <string name="closeDetailsView">Close</string>
+    <string name="Actors">Actors</string>
+
+
+
+</resources>

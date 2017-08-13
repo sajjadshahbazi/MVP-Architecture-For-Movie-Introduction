@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/instantTripViewID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardOriginalImage"
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/originalImage"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        />
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@+id/cardOriginalImage"
+        android:id="@+id/parentOfName"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titleName"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+
+            />
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="bgtrthhrtthgerbbhrtgt"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/ValueName"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@android:color/black"
+        android:layout_below="@+id/parentOfName"
+        android:id="@+id/line1Under"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@+id/line1Under"
+        android:id="@+id/parentOfGenres"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titleGenres"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="bgtrthhrtt"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/ValueGenres"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@android:color/black"
+        android:layout_below="@+id/parentOfGenres"
+        android:id="@+id/line2Under"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@+id/line2Under"
+        android:id="@+id/parentOfStars"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titleStars"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/ValueRating"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:clickable="false"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@android:color/black"
+        android:layout_below="@+id/parentOfStars"
+        android:id="@+id/line3Under"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@+id/line3Under"
+        android:id="@+id/parentOfSummery"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/titleSummery"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            />
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:text="bgtrthhrtthgerbbhrtgt"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/ValueSummery"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@android:color/black"
+        android:layout_below="@+id/parentOfSummery"
+        android:id="@+id/line4Under"
+        />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_below="@+id/parentOfSummery"
+            android:id="@+id/parentOfActors"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Actors"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+
+                />
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/listActors"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="@android:color/black"
+            android:layout_below="@+id/parentOfName"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+
+
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/colorPrimary"
+    android:layout_alignParentBottom="true"
+    android:text="@string/closeDetailsView"
+    android:layout_marginBottom="4dp"
+        android:id="@+id/closeDetailView"
+    />
+
+</RelativeLayout>
